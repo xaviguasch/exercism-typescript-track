@@ -21,7 +21,7 @@
  * This stub is provided to make it straightforward to get started.
  */
 
-export function twoFer(): string {
+export function twoFer(name: string = 'you'): string {
   // ^                 ^   ^ this is called a return type; it's the type of the
   // ^                 ^     value that is returned from this function
   // ^                 ^
@@ -29,4 +29,10 @@ export function twoFer(): string {
   // ^
   // allows the tests to import this function and call it
   // <-- Your code goes here. You may remove all the commentary in this file.
+
+  return `One for ${name}, one for me.`
 }
+
+console.log(twoFer('Alice'))
+console.log(twoFer('Bob'))
+console.log(twoFer())
