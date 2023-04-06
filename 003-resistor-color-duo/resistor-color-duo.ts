@@ -22,7 +22,30 @@
 // Grey: 8
 // White: 9
 // From the example above: brown-green should return 15 brown-green-violet should return 15 too, ignoring the third color.
-
-export function decodedValue() {
-  throw new Error('Remove this statement and implement this function')
+interface Values {
+  [key: string]: string
 }
+
+const valuesObj: Values = {
+  black: '0',
+  brown: '1',
+  red: '2',
+  orange: '3',
+  yellow: '4',
+  green: '5',
+  blue: '6',
+  violet: '7',
+  grey: '8',
+  white: '9',
+}
+
+export function decodedValue(values: string[]): number {
+  const [val1, val2] = values
+
+  return parseInt(valuesObj[val1] + valuesObj[val2], 10)
+}
+
+console.log(decodedValue(['brown', 'black']))
+console.log(decodedValue(['blue', 'grey']))
+console.log(decodedValue(['white', 'red']))
+console.log(decodedValue(['green', 'brown', 'orange']))
