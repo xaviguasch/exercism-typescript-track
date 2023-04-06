@@ -49,3 +49,23 @@ console.log(decodedValue(['brown', 'black']))
 console.log(decodedValue(['blue', 'grey']))
 console.log(decodedValue(['white', 'red']))
 console.log(decodedValue(['green', 'brown', 'orange']))
+
+// ALTERNATIVE SOLUTION
+
+// const colors: Array<string> = [
+//   "black",
+//   "brown",
+//   "red",
+//   "orange",
+//   "yellow",
+//   "green",
+//   "blue",
+//   "violet",
+//   "grey",
+//   "white",
+// ]
+// export function decodedValue(colorsBand:Array<string>) {
+//   return Number(
+//     `${colors.indexOf(colorsBand[0])}${colors.indexOf(colorsBand[1])}`
+//     )
+// }
