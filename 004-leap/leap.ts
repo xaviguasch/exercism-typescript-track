@@ -19,3 +19,5 @@ export function isLeap() {
 
 console.log(isLeap(2015)) // false
 console.log(isLeap(1996)) // true
+
+const amigos = { first: 'man', bitches: 4 }
